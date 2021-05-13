@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PersonalDict</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="date_post">25.03.2021</string>
+    <string name="place_post">Bali</string>
+    <string name="post_descr">Spacer na plaży z fajną dziewczyną i botelką białego witrawnego wina</string>
+    <string name="message_item_text">Kupilem psa, bylo wszystko dobrze. Poszedlem do lozka spac. Lubie zycie</string>
+    <string name="standartTextInNote">Kupiłem psa, było wszystko dobrze. Poszedłem do łóżka było. Lubię życie Historia – nauka humanistyczna i społeczna, która zajmuje się badaniem przeszłości, a w znaczeniu ścisłym badaniem działań i wytworów ludzkich, aż do najstarszych poświadczonych pismem świadectw, w odróżnieniu od prehistorii, archeologii, antropologii lub historii naturalnej.</string>
+</resources>
