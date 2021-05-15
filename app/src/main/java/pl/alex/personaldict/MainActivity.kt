@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import pl.alex.personaldict.models.PostModel
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,19 +19,7 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
 
         bottomNavigationView.setupWithNavController(navController)
-        val db_helper = PersonalJournalDbHelper(baseContext)
-        val db = db_helper.readableDatabase
-        if (db.isOpen) {
-            Toast.makeText(baseContext, "Opened sql", Toast.LENGTH_LONG).show()
-        }
-
-        //db.execSQL("SELECT * from NOTE")
-        val content_val = ContentValues()
-        content_val.put("_id", 1)
-        content_val.put("text", "this is my first text")
-        val result = db.insert("Note", null, content_val)
-        if (result == -1L) {
-            Toast.makeText(baseContext, "Failed", Toast.LENGTH_LONG).show()
-        }
+        val post = PostModel(1, "04.05.2014", "Bali", "small_image", "big_image", true, "this is my first post", baseContext)
+        post.write()
     }
 }
